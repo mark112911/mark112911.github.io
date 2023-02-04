@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>calculator</title>
+    </head>
+    <body>
+        <h1 style="color: darkturquoise;">calculator</h1><p>
+        <img src="下載.png"> the recovery of china associateion</h2>
+        <nav>
+            <h1>the first number<input id="a" type="text" /><br></h1>
+            <h1>the second number<input id="b" type="text" /><br></h1>
+            <button onclick="sum()">+</button>
+            <button onclick="min()">-</button>
+            <button onclick="devide()">/</button>
+            <button onclick="mul()">X</button>
+            <button onclick="power()">**</button><br>
+        </nav>
+        <h2 style="text-align: justify; color: firebrick;">now, its time to show you the right answer</h2>
+        </p><hr>
+        <output id="c"></output><br>
+
+        <script>
+            function sum(a,b){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById("c").value = a+b
+            }
+            function min(a,b){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById("c").value = a-b
+            }
+            function devide(a,b){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById("c").value = a/b
+            }
+            function mul(a,b){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById("c").value = a*b
+            }
+            function power(a,b){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById("c").value = a**b
+            }
+
+        </script>
+    </body>
+</html>
