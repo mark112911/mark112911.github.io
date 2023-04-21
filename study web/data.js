@@ -1,14 +1,42 @@
 const tableData = [
-    { page: '209', author: '1', title: 'a', year: '0', genre: '無'},
-    { page: '209', author: '2', title: 'b', year: '0', genre: '無'},
-    { page: '209', author: '3', title: 'c', year: '0', genre: '無'},
-    { page: '209', author: '4', title: 'd', year: '0', genre: '無'},
-    { page: '209', author: '5', title: 'e', year: '0', genre: '無'},
+    { class: '209', sn: '1', name: 'a', points: 0, reason: '無'},
+    { class: '209', sn: '2', name: 'b', points: 0, reason: '無'},
+    { class: '209', sn: '3', name: 'c', points: 0, reason: '無'},
+    { class: '209', sn: '4', name: 'd', points: 0, reason: '無'},
+    { class: '209', sn: '5', name: 'e', points: 0, reason: '無'},
 
-    { page: '209', author: '6', title: 'f', year: '0', genre: '無'},
-    { page: '209', author: '7', title: 'g', year: '0', genre: '無'},
-    { page: '209', author: '8', title: 'h', year: '0', genre: '無'},
-    { page: '209', author: '9', title: 'i', year: '0', genre: '無' },
-    { page: '209', author: '10', title: 'j', year: '1', genre: '玩手機'},
+    { class: '209', sn: '6', name: 'f', points: 0, reason: '無'},
+    { class: '209', sn: '7', name: 'g', points: 0, reason: '無'},
+    { class: '209', sn: '8', name: 'h', points: 0, reason: '無'},
+    { class: '209', sn: '9', name: 'i', points: 0, reason: '無' },
+    { class: '209', sn: '10', name: 'j', points: 1.5, reason: '玩手機'},
     
+]
+
+const imageData = [
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+
+    
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+    { src : '',
+    class : 'video', width : 854, height : 480 },
+
 ]
