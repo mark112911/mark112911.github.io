@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>搶救學分大作戰</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="based.css" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="sidebar.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="scoreboard.css">
+    </head>
+    <!-- A place where you shouldn't be. -->
+    <body>
+        <div id="sidebar-block"></div>
+        <div id="header-block"></div>
+        <div class="content" style="float: left; text-align: center; align-items: center; justify-content: center;">
+        
+           <!-- The Scoreboard itself-->
+        <div class="about">
+		<h3>SCOREBOARD</h3>
+        </div>
+
+		<div class="table">
+			<div class="table-header">
+			<div class="header_item"><a id="page" class="filter_link filter_link-number" href="#">class</a></div>
+			<div class="header_item name"><a id="name" class="filter_link" href="#"> seat number</a></div>
+			<div class="header_item title"><a id="title" class="filter_link" href="#">name</a></div>
+			<div class="header_item year"><a id="date" class="filter_link" href="#">points</a></div>
+			<div class="header_item"><a id="genre" class="filter_link" href="#">reason</a></div>
+			</div>
+			<div class="table-content" id="target"></div>
+		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+		<script src="data.js"></script>
+		<script src="scoreboard.js"></script>
+         </div>
+
+        <script src="content.js"></script>
+    </body>
+</html>

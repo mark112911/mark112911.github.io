@@ -1,0 +1,136 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background-color: #252526;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+.sidebar .logo-content .logo {
+    color: #ffffff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.active .logo-content .logo {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.logo-content .logo .i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo-content .logo .logo-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #sidebar-btn {
+    position: absolute;
+    color: #ffffff;
+    top: 6px;
+    left: 50%;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+
+.sidebar.active #sidebar-btn {
+    left: 90%;
+}
+
+.sidebar #sidebar-btn:hover {
+    color: #252526;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 122px;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    line-height: 35px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    text-align: center;
+    display: block;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    transform: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+}
+.sidebar ul li a:hover {
+    color: #252526;
+    background-color: #ffffff;
+}
+
+.sidebar ul li i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar .links-name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.active .links-name {
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -1,0 +1,117 @@
+.header {
+    position: absolute;
+    background-color: #464646;
+    width: calc(100% - 78px);
+    transition: width 0.5s ease;
+    transition: left 0.5s ease;
+    top: 0;
+    left: 78px;
+    z-index: 0;
+    height: 100px;
+    padding: 0;
+}
+
+.sidebar.active ~ .header {
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header nav img {
+    margin: 10px;
+}
+
+.header nav ul li {
+    color: #ffffff;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    font-size: 18px;
+}
+
+.content {
+    background-color: #1e1e1e;
+    position: absolute;
+    height: fit-content;
+    width: calc(100% - 78px);
+    transition: width 0.5s ease;
+    transition: left 0.5s ease;
+    left: 78px;
+    top: 100px;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.sidebar.active ~ .content {
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.content p {
+    text-align: left;
+    font-size: medium;
+    margin: 1% 8vw;
+}
+
+.content p.hb {
+    background-color: #333333;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    block-size: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content h1 {
+    font-family: sans-serif;
+    block-size: fit-content;
+    margin: 1% auto;
+    text-align: center;
+    font-size: 30px;
+    width: fit-content;
+    block-size: fit-content;
+    max-width: 1000px;
+    padding: 0 150px;
+    position: relative;
+}
+
+.content h1:before {
+    content: "";
+    display: block;
+    width: 130px;
+    block-size: fit-content;
+    height: 5px;
+    background: #464646;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.content h1:after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: #464646;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.content h2 {
+    text-align: left;
+    margin: 0 8vw;
+}
