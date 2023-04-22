@@ -152,7 +152,7 @@
   }
   
   .product__price:before {
-    content: 'NTD';
+    content: '';
   }
   
   .product__image {
@@ -245,7 +245,7 @@
   }
   
   .cart__item__price:before {
-    content: '$';
+    content: '';
   }
   
   .cart-footer {
