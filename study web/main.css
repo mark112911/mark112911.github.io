@@ -168,7 +168,7 @@
   }
   
   .member:hover .member__image {
-    animation: .5s shake-product-image;
+    animation: .5s shake-member-image;
   }
   
   @keyframes shake-member-image {
@@ -206,7 +206,7 @@
     text-align: center;
     padding: var(--base-padding);
     border: 2px dashed var(--color-gray-light);
-    animation: .3s add-cart-item;
+    animation: .3s add-console-item;
   }
   
   @keyframes add-console-item {
@@ -223,7 +223,7 @@
   }
   
   .console__item--removed {
-    animation: .3s remove-cart-item;
+    animation: .3s remove-console-item;
   }
   
   @keyframes remove-console-item {
