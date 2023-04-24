@@ -10,7 +10,7 @@ if (console.length > 0) {
     insertItemToDOM(member);
     countConsoleTotal();
 
-    addToCartButtonsDOM.forEach(addToConsoleButtonDOM => {
+    addToConsoleButtonsDOM.forEach(addToConsoleButtonDOM => {
       const memberDOM = addToConsoleButtonDOM.parentNode;
 
       if (memberDOM.querySelector('.member__name').innerText === member.name) {
