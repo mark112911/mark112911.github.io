@@ -103,8 +103,8 @@ function decreaseItem(member, consoleItemDOM, addToConsoleButtonDOM) {
 
 function removeItem(member, consoleItemDOM, addToConsoleButtonDOM) {
   consoleItemDOM.classList.add('console__item--removed');
-  setTimeout(() => cartItemDOM.remove(), 250);
-  console = cart.filter(consoleItem => consoleItem.name !== member.name);
+  setTimeout(() => consoleItemDOM.remove(), 250);
+  console = console.filter(consoleItem => consoleItem.name !== member.name);
   saveConsole();
   addToConsoleButtonDOM.innerText = 'Add To Table';
   addToConsoleButtonDOM.disabled = false;
