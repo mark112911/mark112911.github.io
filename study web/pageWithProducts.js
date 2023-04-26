@@ -138,7 +138,7 @@ function clearConsole() {
   });
 
   console = [];
-  localStorage.removeItem('cart');
+  localStorage.removeItem('console');
   document.querySelector('.console-footer').remove();
 
   addToConsoleButtonsDOM.forEach(addToConsoleButtonDOM => {
